@@ -4,6 +4,8 @@
 print("Dobrodošli v igri Ugani število!")
 print("Uganiti morate, katero število med 1 in 10 imam v mislih.")
 
+moje_stevilo = 2
+
 while True:
     try:
         vneseno_stevilo = int(raw_input("Vnesi število: "))
@@ -12,7 +14,7 @@ while True:
         print("Ste res vnesli število med 1 in 10?")
         continue
 
-    if vneseno_stevilo != 2:
+    if vneseno_stevilo != moje_stevilo:
         print("Žal niste uganili, poskusite ponovno.")
         continue
 
