@@ -14,10 +14,12 @@ while True:
         print("Ste res vnesli število med 1 in 10?")
         continue
 
-    if vneseno_stevilo != moje_stevilo:
-        print("Žal niste uganili, poskusite ponovno.")
-        continue
+    if vneseno_stevilo < moje_stevilo:
+        print("Število je višje od " + str (vneseno_stevilo) + ".")
 
-    else:
+    elif vneseno_stevilo > moje_stevilo:
+        print("Število je nižje od " + str (vneseno_stevilo) + ".")
+
+    elif vneseno_stevilo == moje_stevilo:
         print("Čestitamo, število je res 2!")
         break
